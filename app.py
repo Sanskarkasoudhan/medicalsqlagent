@@ -6,7 +6,6 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 # Set up API key for Gemini model
 os.environ["GOOGLE_API_KEY"] = os.getenv("GEMINI_API_KEY")
 
-
 # Initialize SQLite database
 DB_PATH = "database.db"
 db = SQLDatabase.from_uri(f"sqlite:///{DB_PATH}")
